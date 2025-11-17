@@ -422,8 +422,18 @@ footer div {
         padding: 17px;
     }
 
+    .logo {
+        font-size: 1.1rem;
+    }
+
     .about-section > div {
         font-size: 1rem;
+    }
+
+    .open-call-text-conteiner {
+        font-size: 1.6rem;
+        width: 300px;
+        margin-top: 20vh;
     }
 
     .films-list {
@@ -449,8 +459,8 @@ footer div {
     }
 
     .look-for-anons {
-        font-size: 2.3em;
-        margin: 20vh 3vw 0;
+        font-size: 2rem;
+        margin: 25vh 3vw 0;
     }
 
     .look-for-anons-conteiner ul {
@@ -463,7 +473,12 @@ footer div {
     }
 
     .ask-question-conteiner p:first-of-type {
+        font-size: 1.4rem;
         top: 30%;
+    }
+
+    .rights {
+        font-size: 1rem;
     }
 }
 
