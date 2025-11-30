@@ -171,7 +171,7 @@ h2, h3, h4, h5 {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    padding: 6vw;
+    padding: 6vh;
 }
 
 .about-section-text-conteiner-1 p:nth-child(2) {
@@ -187,13 +187,13 @@ h2, h3, h4, h5 {
 
 .about-section-text-conteiner-2 {
     width: 30%;
-    padding: 4vw;
+    padding: 6vh;
 }
 
 .about-section-text-conteiner-3 {
     width: 30%;
-    padding: 4vw;
-    padding-bottom: 8vw;
+    padding: 6vh;
+    padding-bottom: 17vh;
 }
 
 .about-section-end-pic {
@@ -269,6 +269,7 @@ h2, h3, h4, h5 {
     place-items: center;
     place-content: center;
     gap: 3vw;
+    padding: 2vw;
 }
 
 .film-image-conteiner {
@@ -344,13 +345,13 @@ footer div {
 
 .ask-question-conteiner {
     position: relative;
-    font-size: 1.7em;
+    font-size: 2.5em;
     font-family: "MorfinSans";
 }
 
 .ask-question-conteiner p:first-of-type {
     position: absolute;
-    top: 50%;
+    top: 30%;
     width: 100%;
     text-align: center;
 }
@@ -362,13 +363,13 @@ footer div {
     right: 3vw;
 }
 
-@media screen and (max-width: 1120px) {
+@media screen and (max-width: 1024px) {
     .header-panel {
         justify-content: right;
     }
 
     .logo {
-        font-size: 1.8rem;
+        font-size: 3rem;
     }
     
     .header-panel::before {
@@ -378,17 +379,38 @@ footer div {
         font-weight: 900;
         top: 2vh;
         left: 5vw;
-        font-size: 2rem;
+        font-size: 3rem;
+    }
+    
+    .page-navigation a {
+        font-size: 3rem;
     }
     
     .page-navigation ul {
         display: flex;
         flex-direction: column;
-
     }
     
     .socials {
         display: none;
+    }
+
+    .btn {
+        font-size: 3rem;
+        padding: 20px;
+        width: 500px;
+    }
+
+    .about-heading-photo {
+        height: 450px;
+    }
+
+    .about-section-text-conteiner-2 {
+        padding: 5vh 2vw;
+    }
+
+    .about-section-text-conteiner-3 {
+        padding: 5vh 3vw;
     }
 
     .open-call-section {
@@ -396,38 +418,58 @@ footer div {
     }
 
     .open-call-text-conteiner {
-        font-size: 2em;
-        margin-top: 40vh;
+        font-size: 1.8rem;
+        margin-top: 240px;
         margin-left: 5vw;
-        width: 400px;
+        width: 37%;
         padding-right: 0;
     }
 
     .open-call-text-conteiner .btn {
-        margin-top: 25vh;
+        margin-top: 130px;
         margin-bottom: 0;
+        font-size: 2rem;
+        padding: 20px;
+        width: 400px;
     }
-    
 
     .open-call-text-conteiner p:nth-child(n + 3), ul {
         display: none;
     }
-}
 
-@media screen and (max-width: 970px) {
-    header .btn {
-        width: 150px;
-        height: 50px;
-        font-size: 1rem;
-        padding: 17px;
+    .members-cards-conteiner {
+        grid: repeat(3, 1fr) / repeat(2, 1fr);
     }
 
+    .films button {
+        margin-top: 3vh;
+        margin-bottom: 5vh;
+        font-size: 2rem;
+        padding: 20px;
+        width: 400px;
+    }
+
+    .look-for-anons {
+        font-size: 3rem;
+        margin: 5vh auto 0;
+    }
+
+    .look-for-anons-conteiner ul {
+        margin: 10vh auto 0;
+    }
+
+    .ask-question-conteiner {
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width: 890px) {
     .logo {
-        font-size: 1.1rem;
+        font-size: 2.5rem;
     }
 
     .about-section > div {
-        font-size: 1rem;
+        font-size: 1.3rem;
     }
 
     .open-call-text-conteiner {
@@ -454,37 +496,60 @@ footer div {
         display: none;
     }
 
-    .look-for-anons-conteiner {
-        margin-left: 2vw;
+    footer {
+        flex-direction: column-reverse;
+    }
+
+    footer div {
+        width: 100%;
     }
 
     .look-for-anons {
-        font-size: 2rem;
-        margin: 25vh 3vw 0;
+        font-size: 3em;
+        line-height: 1.5em;
+        margin: 15vh auto 0;
+        width: 60vw;
     }
 
     .look-for-anons-conteiner ul {
-        gap: 5vw;
-        margin:  20vh 0 0;
+        gap: 0;
+        margin: 12vh auto 15vh;
     }
 
     .footer-diagonal-devider {
-        height: 100vh;
+        display: none;
     }
 
     .ask-question-conteiner p:first-of-type {
-        font-size: 1.4rem;
-        top: 30%;
+        font-size: 1em;
+        margin-top: 2em;
     }
 
     .rights {
-        font-size: 1rem;
+        position: absolute;
+        bottom: 2vh;
+        right: 5vw;
     }
 }
 
+
 @media screen and (max-width: 450px) {
     .logo {
-        font-size: 1.5em;
+        font-size: 1rem;
+    }
+
+    .btn {
+        font-size: 1.4rem;
+        padding: 15px;
+        width: 230px;
+    }
+
+    .header-panel::before {
+        font-size: 1.5rem;
+    }
+    
+    .page-navigation a {
+        font-size: 1.5rem;
     }
 
     .about-section {
@@ -497,8 +562,16 @@ footer div {
         border-right: none;
     }
 
+    .about-section-text-conteiner-1 {
+        padding: 3vh;
+    }
+
+    .about-section-text-conteiner-2, .about-section-text-conteiner-3 {
+        padding: 10vh 6vh;
+    }
+
     h2, h3, h4, h5 {
-        font-size: 3rem;
+        font-size: 2.5rem;
         padding: 2vw 3vw;
         font-family: "MorfinSans";
     }
@@ -526,12 +599,20 @@ footer div {
     }
 
     .films-heading {
+        flex-direction: column;
         padding-top: 3vh;
         padding-left: 2vw;
     }
 
+    .film-image-conteiner {
+        width: 348px;
+    }
+
     .films button {
-        margin: 3vh 0;
+        font-size: 1.2rem;
+        padding: 20px;
+        width: 200px;
+        margin: 5vh 0;
     }
 
     .members-cards-conteiner {
@@ -564,38 +645,12 @@ footer div {
         background-color: rgba(0,0,0,0.7);
     }
 
-    footer {
-        flex-direction: column-reverse;
-    }
-
-    footer div {
-        width: 100%;
-    }
-
     .look-for-anons {
+        font-size: 2.3em;
+        margin: 23vh auto 0;
+    }
+
+    .ask-question-conteiner {
         font-size: 2em;
-        line-height: 1.5em;
-        margin: 2.5em 0 0;
-        padding-left: 15vw;
-    }
-
-    .look-for-anons-conteiner ul {
-        gap: 0;
-        margin: 10vh auto 15vh;
-    }
-
-    .footer-diagonal-devider {
-        display: none;
-    }
-
-    .ask-question-conteiner p:first-of-type {
-        font-size: 0.7em;
-        margin-top: 2em;
-    }
-
-    .rights {
-        position: absolute;
-        bottom: 2vh;
-        right: 5vw;
     }
 }
