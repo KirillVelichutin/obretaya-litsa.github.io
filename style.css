@@ -266,32 +266,30 @@ h2, h3, h4, h5 {
     font-family: "MorfinSans";
 }
 
-.films-list {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    grid-template-rows: repeat(3, 1fr);
-    place-items: center;
-    place-content: center;
-    gap: 3vw;
-    padding: 2vw;
+.films-list-item {
+    list-style: none;
+    display: flex;
+    margin: 5vh auto;
+    width: 95vw;
 }
 
 .film-image-conteiner {
     background-color: #FCF9F4;
-    width: 370px;
+    width: 500px;
     height: 220px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.films-list div p {
+.films-list-text {
     text-align: start;
     float: inline-start;
     display: block;
     width: 100%;
     padding-right: 3vw;
     margin-top: 0.4em;
+    margin-left: 5vw;
     font-family: "Metamorphous";
     font-size: 1.5em;
 }
@@ -437,7 +435,11 @@ footer div {
         width: 400px;
     }
 
-    .open-call-text-conteiner p:nth-child(n + 3), ul {
+    .open-call-text-conteiner p:nth-child(n + 3) {
+        display: none;
+    }
+
+    .open-call-text-conteiner ul {
         display: none;
     }
 
@@ -482,24 +484,15 @@ footer div {
         margin-top: 20vh;
     }
 
-    .films-list {
-        display: flex;
+    .films-list-item {
         flex-direction: column;
-        margin: 0 10%;
-    }
-
-    .films-list div:nth-child(odd) {
-        margin-top: 6vh;
+        align-items: center;
     }
 
     .film-image-conteiner {
         width: 360px;
     }
     
-    .films-list div:nth-child(n + 5) {
-        display: none;
-    }
-
     footer {
         flex-direction: column-reverse;
     }
