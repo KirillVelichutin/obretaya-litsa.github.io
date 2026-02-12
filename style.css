@@ -26,6 +26,7 @@ html {
 body {
     background-color: #322E2B;
     color: #FCF9F4;
+    font-size: 16px;
 }
 
 header {
@@ -69,7 +70,7 @@ header::before {
     text-decoration: none;
     color: white;
     font-family: "MorfinSans";
-    font-size: 2rem;
+    font-size: clamp(1.5rem, 3.5vw, 2rem);
     transition: color 250ms;
 }
 
@@ -104,7 +105,7 @@ header::before {
     left: 0.7em;
     color: white;
     font-family: "MorfinSans";
-    font-size: 3em;
+    font-size: clamp(1rem, 3.5vw, 3rem);
     width: 90%;
     letter-spacing:0.75rem;
     font-weight: 100;
@@ -119,7 +120,7 @@ header::before {
     border-radius: 50px;
     font-family: "MorfinSans";
     color: white;
-    font-size: 28px;
+    font-size: clamp(1.4rem, 3.5vw, 28px);
     padding: 20px;
     width: 300px;
     text-align: center;
@@ -370,10 +371,6 @@ footer div {
         justify-content: right;
     }
 
-    .logo {
-        font-size: 3rem;
-    }
-    
     .header-panel::before {
         content: "///";
         color: #FCF9F4;
@@ -381,10 +378,6 @@ footer div {
         font-weight: 900;
         top: 2vh;
         left: 5vw;
-        font-size: 3rem;
-    }
-    
-    .page-navigation a {
         font-size: 3rem;
     }
     
@@ -398,9 +391,7 @@ footer div {
     }
 
     .btn {
-        font-size: 3rem;
         padding: 20px;
-        width: 500px;
     }
 
     .about-heading-photo {
@@ -470,10 +461,6 @@ footer div {
 }
 
 @media screen and (max-width: 890px) {
-    .logo {
-        font-size: 2.5rem;
-    }
-
     .about-section > div {
         font-size: 1.3rem;
     }
@@ -517,7 +504,7 @@ footer div {
         display: none;
     }
 
-    .ask-question-conteiner p:first-of-type {
+    .ask-question-conteiner p {
         font-size: 1em;
         margin-top: 2em;
     }
@@ -531,21 +518,12 @@ footer div {
 
 
 @media screen and (max-width: 550px) {
-    .logo {
-        font-size: 1rem;
-    }
-
     .btn {
-        font-size: 1.4rem;
         padding: 15px;
         width: 230px;
     }
 
     .header-panel::before {
-        font-size: 1.5rem;
-    }
-    
-    .page-navigation a {
         font-size: 1.5rem;
     }
 
